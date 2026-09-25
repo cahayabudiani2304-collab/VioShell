@@ -1,0 +1,8 @@
+{
+  "name": "VioShell - Smart Packaging Indikator",
+  "description": "Inovasi Smart Packaging Berbasis Limbah Cangkang Telur dan Ekstrak Bunga Telang sebagai Indikator Kesegaran Pangan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

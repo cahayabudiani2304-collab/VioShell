@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+@layer utilities {
+  .will-change-transform {
+    will-change: transform;
+  }
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .perspective-1200 {
+    perspective: 1200px;
+  }
+}
+
+/* ThreeUI Shader Frame & Landing Page Container - Responsive for Mobile, Laptop, and PC */
+.shader-frame {
+  position: relative;
+  width: 100%;
+  height: clamp(380px, 58vh, 500px);
+  min-height: 380px;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .shader-frame {
+    height: clamp(480px, 68vh, 620px);
+    min-height: 480px;
+    border-radius: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .shader-frame {
+    height: clamp(600px, 80vh, 840px);
+    min-height: 580px;
+    border-radius: 1.5rem;
+  }
+}
+
+.shader-frame .landing-page-frame,
+.shader-frame .threeui-background {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.shader-frame iframe {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  border: none !important;
+  display: block !important;
+}
+
+/* Custom styled mobile-friendly range slider */
+input[type="range"]::-webkit-slider-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+}
